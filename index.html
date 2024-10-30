@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios de Tours en San Juan La Laguna</title>
+    <title>Chema’s Colorful Journeys en San Juan La Laguna</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Explora San Juan La Laguna</h1>
+        <h1 id="welcome-text">¡Bienvenido a las Aventura de Chema!</h1>
         <nav>
             <ul>
                 <li><a href="#cooking-classes">Clases de Cocina</a></li>
@@ -16,61 +16,57 @@
                 <li><a href="#hike-indian-nose">Caminata al Indian Nose</a></li>
                 <li><a href="#mayan-painting">Curso de Pintura Maya</a></li>
                 <li><a href="#village-visit">Visita a la Aldea</a></li>
-                <li><a href="#gallery">Galería</a></li>
-                <li><a href="#map">Mapa</a></li>
+                <li><a href="#image-gallery">Galería de Imágenes</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <section id="introduction">
+            <h2 id="introduction-title">Explora la Cultura Maya con Chema</h2>
+            <p id="introduction-text">¡Hola! Soy Chema, tu guía local y apasionado pintor, listo para compartir contigo las maravillas de San Juan La Laguna. Aquí, no solo te llevaré a explorar paisajes increíbles, sino que también te ofreceré una experiencia auténtica con mi familia de la etnia Tz’utujil. ¡Prepárate para vivir una aventura inolvidable!</p>
+        </section>
+
         <section id="cooking-classes">
             <h2>Clases de Cocina</h2>
-            <p>Únete a nuestras clases de cocina para preparar especialidades locales, incluyendo una visita al mercado para recoger ingredientes frescos.</p>
+            <p id="cooking-classes-text">¡Ven y cocina con nosotros! En nuestras clases de cocina, aprenderás a preparar delicias locales utilizando ingredientes frescos del mercado. Disfrutarás de una experiencia práctica y sabrosa que te llevará a conocer la gastronomía de nuestra cultura.</p>
         </section>
 
         <section id="weaving-course">
             <h2>Curso de Tejido</h2>
-            <p>Aprende el arte del tejido tradicional de manos de artesanos locales.</p>
+            <p id="weaving-course-text">Sumérgete en el arte del tejido tradicional. Aprenderás técnicas ancestrales de manos de talentosos artesanos locales y crearás tus propias piezas de arte textil.</p>
         </section>
 
         <section id="hike-indian-nose">
             <h2>Caminata al Indian Nose</h2>
-            <p>Experimenta vistas impresionantes en una caminata al Indian Nose.</p>
+            <p id="hike-indian-nose-text">¡Prepárate para una caminata mágica! Te llevaré al Indian Nose, donde disfrutarás de vistas impresionantes del amanecer y el atardecer sobre el lago. No olvides tu cámara, ¡los recuerdos aquí son eternos!</p>
         </section>
 
         <section id="mayan-painting">
             <h2>Curso de Pintura Maya</h2>
-            <p>Descubre las técnicas de la pintura típica maya en nuestro taller.</p>
+            <p id="mayan-painting-text">Explora tu creatividad con nuestro curso de pintura maya. Aprenderás las técnicas y estilos de esta rica tradición artística, creando tus propias obras que reflejan la belleza de nuestra cultura.</p>
         </section>
 
         <section id="village-visit">
             <h2>Visita a la Aldea de San Juan La Laguna</h2>
-            <p>Explora la aldea y su rica cultura en un tour guiado.</p>
+            <p id="village-visit-text">Únete a nosotros en un recorrido por nuestra aldea. Conocerás la historia, las tradiciones y la vida cotidiana de los habitantes de San Juan, todo en un ambiente acogedor y amigable.</p>
         </section>
 
-        <section id="gallery">
+        <section id="image-gallery">
             <h2>Galería de Imágenes</h2>
-            <div class="gallery-container">
-                <img src="image1.jpg" alt="Tour 1" />
-                <img src="image2.jpg" alt="Tour 2" />
-                <img src="image3.jpg" alt="Tour 3" />
-                <img src="image4.jpg" alt="Tour 4" />
+            <p id="gallery-text">¡Déjate inspirar! Aquí te mostramos algunas fotos de nuestras actividades y de la hermosa San Juan La Laguna. ¡Esperamos que estas imágenes te animen a unirte a nosotros!</p>
+            <div class="gallery">
+                <img src="images/gallery1.jpg" alt="Clases de cocina">
+                <img src="images/gallery2.jpg" alt="Tejido tradicional">
+                <img src="images/gallery3.jpg" alt="Caminata al Indian Nose">
+                <img src="images/gallery4.jpg" alt="Pintura Maya">
+                <img src="images/gallery5.jpg" alt="Visita a la Aldea">
             </div>
         </section>
 
-        <section id="map">
-            <h2>Mapa de Tours</h2>
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387143.8116408616!2d-91.33213109896383!3d14.757611177074261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85812d4d93fc0d05%3A0xe0f7a45f843d0bba!2sSan%20Juan%20La%20Laguna%2C%20Guatemala!5e0!3m2!1ses!2sus!4v1636409079261!5m2!1ses!2sus" 
-                width="600" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy"></iframe>
-        </section>
-
-        <aside class="contact-info">
-            <h2>Contacto</h2>
+        <aside class="contact-info" id="contact">
+            <h2 id="contact-title">Contacto</h2>
             <p><strong>Chema Vásquez</strong></p>
             <p><strong>Teléfono:</strong> +502 1234 5678</p>
             <p><strong>WhatsApp:</strong> +502 1234 5678</p>
@@ -78,12 +74,14 @@
             <ul>
                 <li>Experiencias culturales</li>
                 <li>Fotografía durante los tours</li>
+                <li>Hospedaje en Airbnb: habitación privada, baño privado, agua caliente</li>
             </ul>
+            <p><a href="https://www.airbnb.com/rooms/760777395937903938" target="_blank">Reserva tu estancia en Airbnb aquí</a></p>
         </aside>
     </main>
 
     <footer>
-        <p>&copy; 2024 Servicios de Tours en San Juan La Laguna. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Chema’s Colorful Journeys en San Juan La Laguna. Todos los derechos reservados.</p>
         <button id="lang-toggle">Cambiar a Inglés</button>
     </footer>
 
@@ -92,21 +90,23 @@
 
         document.getElementById('lang-toggle').addEventListener('click', function() {
             if (isSpanish) {
-                document.body.innerHTML = document.body.innerHTML
-                    .replace(/Explora San Juan La Laguna/g, 'Explore San Juan La Laguna')
-                    .replace(/Clases de Cocina/g, 'Cooking Classes')
-                    .replace(/Curso de Tejido/g, 'Weaving Course')
-                    .replace(/Caminata al Indian Nose/g, 'Hike to Indian Nose')
-                    .replace(/Curso de Pintura Maya/g, 'Mayan Painting Course')
-                    .replace(/Visita a la Aldea/g, 'Visit to the Village')
-                    .replace(/Galería de Imágenes/g, 'Image Gallery')
-                    .replace(/Mapa de Tours/g, 'Tour Map')
-                    .replace(/Contacto/g, 'Contact')
-                    .replace(/Teléfono:/g, 'Phone:')
-                    .replace(/WhatsApp:/g, 'WhatsApp:')
-                    .replace(/Servicios Adicionales:/g, 'Additional Services:')
-                    .replace(/Experiencias culturales/g, 'Cultural Experiences')
-                    .replace(/Fotografía durante los tours/g, 'Photography during tours');
+                document.getElementById('welcome-text').innerText = 'Welcome to Chema’s Adventures!';
+                document.getElementById('introduction-title').innerText = 'Explore Mayan Culture with Chema';
+                document.getElementById('introduction-text').innerText = 'Hello! I am Chema, your local guide and passionate painter, ready to share with you the wonders of San Juan La Laguna. Here, I will not only take you to explore amazing landscapes but also offer you an authentic experience with my Tz’utujil ethnic family. Get ready to live an unforgettable adventure!';
+                
+                document.getElementById('cooking-classes-text').innerText = 'Come and cook with us! In our cooking classes, you will learn to prepare local delicacies using fresh ingredients from the market. You will enjoy a hands-on and tasty experience that will introduce you to the gastronomy of our culture.';
+                document.getElementById('weaving-course-text').innerText = 'Immerse yourself in the art of traditional weaving. You will learn ancestral techniques from talented local artisans and create your own textile art pieces.';
+                document.getElementById('hike-indian-nose-text').innerText = 'Get ready for a magical hike! I will take you to Indian Nose, where you will enjoy breathtaking views of the sunrise and sunset over the lake. Don’t forget your camera, as the memories here are eternal!';
+                document.getElementById('mayan-painting-text').innerText = 'Explore your creativity with our Mayan painting course. You will learn the techniques and styles of this rich artistic tradition, creating your own works that reflect the beauty of our culture.';
+                document.getElementById('village-visit-text').innerText = 'Join us on a tour of our village. You will learn about the history, traditions, and daily life of the people of San Juan, all in a friendly and welcoming atmosphere.';
+                document.getElementById('gallery-text').innerText = 'Let yourself be inspired! Here we show you some photos of our activities and the beautiful San Juan La Laguna. We hope these images encourage you to join us!';
+                document.getElementById('contact-title').innerText = 'Contact';
+                document.querySelector('strong').innerText = 'Chema Vásquez';
+                document.querySelectorAll('li')[0].innerText = 'Cultural experiences';
+                document.querySelectorAll('li')[1].innerText = 'Photography during tours';
+                document.querySelectorAll('li')[2].innerText = 'Airbnb accommodation: private room, private bathroom, hot water';
+                document.querySelector('a').innerText = 'Book your stay on Airbnb here';
+                
                 this.innerText = 'Cambiar a Español';
             } else {
                 location.reload(); // Reload to revert back to Spanish
@@ -116,4 +116,3 @@
     </script>
 </body>
 </html>
-
