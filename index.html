@@ -16,6 +16,8 @@
                 <li><a href="#hike-indian-nose">Caminata al Indian Nose</a></li>
                 <li><a href="#mayan-painting">Curso de Pintura Maya</a></li>
                 <li><a href="#village-visit">Visita a la Aldea</a></li>
+                <li><a href="#gallery">Galería</a></li>
+                <li><a href="#map">Mapa</a></li>
             </ul>
         </nav>
     </header>
@@ -46,11 +48,32 @@
             <p>Explora la aldea y su rica cultura en un tour guiado.</p>
         </section>
 
+        <section id="gallery">
+            <h2>Galería de Imágenes</h2>
+            <div class="gallery-container">
+                <img src="image1.jpg" alt="Tour 1" />
+                <img src="image2.jpg" alt="Tour 2" />
+                <img src="image3.jpg" alt="Tour 3" />
+                <img src="image4.jpg" alt="Tour 4" />
+            </div>
+        </section>
+
+        <section id="map">
+            <h2>Mapa de Tours</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387143.8116408616!2d-91.33213109896383!3d14.757611177074261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85812d4d93fc0d05%3A0xe0f7a45f843d0bba!2sSan%20Juan%20La%20Laguna%2C%20Guatemala!5e0!3m2!1ses!2sus!4v1636409079261!5m2!1ses!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
+        </section>
+
         <aside class="contact-info">
             <h2>Contacto</h2>
             <p><strong>Chema Vásquez</strong></p>
             <p><strong>Teléfono:</strong> +502 1234 5678</p>
-            <p><strong>WhatsApp:</strong> +502 8765 4321</p>
+            <p><strong>WhatsApp:</strong> +502 1234 5678</p>
             <h3>Servicios Adicionales:</h3>
             <ul>
                 <li>Experiencias culturales</li>
@@ -60,9 +83,37 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Servicios de Tours en San Juan La Laguna</p>
+        <p>&copy; 2024 Servicios de Tours en San Juan La Laguna. Todos los derechos reservados.</p>
+        <button id="lang-toggle">Cambiar a Inglés</button>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        let isSpanish = true;
+
+        document.getElementById('lang-toggle').addEventListener('click', function() {
+            if (isSpanish) {
+                document.body.innerHTML = document.body.innerHTML
+                    .replace(/Explora San Juan La Laguna/g, 'Explore San Juan La Laguna')
+                    .replace(/Clases de Cocina/g, 'Cooking Classes')
+                    .replace(/Curso de Tejido/g, 'Weaving Course')
+                    .replace(/Caminata al Indian Nose/g, 'Hike to Indian Nose')
+                    .replace(/Curso de Pintura Maya/g, 'Mayan Painting Course')
+                    .replace(/Visita a la Aldea/g, 'Visit to the Village')
+                    .replace(/Galería de Imágenes/g, 'Image Gallery')
+                    .replace(/Mapa de Tours/g, 'Tour Map')
+                    .replace(/Contacto/g, 'Contact')
+                    .replace(/Teléfono:/g, 'Phone:')
+                    .replace(/WhatsApp:/g, 'WhatsApp:')
+                    .replace(/Servicios Adicionales:/g, 'Additional Services:')
+                    .replace(/Experiencias culturales/g, 'Cultural Experiences')
+                    .replace(/Fotografía durante los tours/g, 'Photography during tours');
+                this.innerText = 'Cambiar a Español';
+            } else {
+                location.reload(); // Reload to revert back to Spanish
+            }
+            isSpanish = !isSpanish;
+        });
+    </script>
 </body>
 </html>
+
