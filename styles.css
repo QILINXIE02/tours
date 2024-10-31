@@ -1,127 +1,100 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
-  background-color: #f7f9fc; /* Light background for a professional look */
-  color: #333;
+  margin: 0;
+  padding: 0;
+  background: #f0f8ff; /* Light background color */
+  color: #333; /* Dark text color */
 }
 
 header {
-  background: #004085; /* Dark blue for header */
-  color: #ffffff;
-  padding: 20px 5%; /* Padding to fit mobile better */
+  background: #4CAF50; /* Green background for header */
+  color: white; /* White text in header */
+  padding: 10px 0;
   text-align: center;
 }
 
-header h1 {
-  margin-bottom: 10px;
-  font-size: 1.8em; /* Larger font for mobile */
-}
-
 nav ul {
-  list-style-type: none;
   padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline-block; /* Allow for wrapping */
-  margin: 0 10px; /* Adjust margin for smaller screens */
+  margin: 0 15px;
 }
 
-nav a {
-  color: #ffffff;
+nav ul li a {
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
 }
 
-nav a:hover {
-  color: #cce5ff; /* Light blue on hover */
+nav ul li a:hover {
+  text-decoration: underline;
 }
 
 main {
-  max-width: 1200px;
-  margin: 20px auto; /* Centering the main content */
-  padding: 20px 5%; /* Padding for mobile */
-  display: flex;
-  flex-wrap: wrap; /* Allow sections to wrap */
-  justify-content: space-between; /* Space out sections */
-}
-
-section {
-  background: #ffffff;
-  margin: 10px;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex: 1 1 calc(48% - 20px); /* Responsive sections */
 }
 
-section h2 {
-  color: #0056b3; /* Lighter blue for section headers */
-  font-size: 1.5em; /* Responsive header font size */
+h2 {
+  color: #4CAF50; /* Consistent color for subheadings */
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for images */
 }
 
 .contact-info {
-  background: #e9ecef; /* Light gray background for contact info */
-  margin: 10px;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  flex: 0 1 calc(28% - 20px); /* Fixed width for the contact info */
-}
-
-.contact-info h2 {
-  color: #004085; /* Dark blue for contact header */
+  background: #e0f7fa; /* Light cyan background for contact */
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners for contact section */
 }
 
 footer {
   text-align: center;
-  padding: 15px 5%; /* Responsive padding */
-  background: #004085; /* Same as header */
-  color: #ffffff;
+  padding: 10px 0;
+  background: #4CAF50; /* Green footer */
+  color: white; /* White text in footer */
   position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-ul {
-  padding-left: 20px;
-}
-
-ul li {
-  margin: 5px 0;
 }
 
 button {
-  background-color: #0056b3; /* Blue background for button */
-  color: white;
+  background: #ff9800; /* Orange button */
+  color: white; /* White text on button */
   border: none;
   border-radius: 5px;
-  padding: 10px 15px; /* Padding for better tap area */
+  padding: 10px 15px;
   cursor: pointer;
-  font-size: 1em; /* Responsive font size */
-  margin-top: 10px; /* Space above button */
+  margin-top: 10px;
 }
 
 button:hover {
-  background-color: #004085; /* Darker blue on hover */
+  background: #f57c00; /* Darker orange on hover */
 }
 
-@media (max-width: 768px) {
-  main {
-    flex-direction: column; /* Stack sections on small screens */
-    padding: 10px; /* Less padding on small screens */
+/* Media queries for responsive design */
+@media (max-width: 600px) {
+  nav ul {
+      flex-direction: column;
   }
 
-  section,
-  .contact-info {
-    flex: 1 1 100%; /* Full width on smaller screens */
-    margin: 10px 0; /* Margin to separate stacked sections */
+  nav ul li {
+      margin: 10px 0;
   }
 }
