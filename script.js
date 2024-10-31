@@ -25,3 +25,4 @@ document.getElementById('lang-toggle').addEventListener('click', function() {
         location.reload(); // Reloads the page to reset to Spanish
     }
 });
+

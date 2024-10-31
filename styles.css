@@ -112,3 +112,70 @@ footer {
   width: 100%;
   height: 100%;
 }
+
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center navigation items */
+  gap: 15px; /* Space between navigation items */
+}
+
+nav ul li a {
+  color: white; /* White text for navigation links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Make links bold */
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+main {
+  padding: 20px; /* Padding around the main content */
+}
+
+section {
+  margin-bottom: 40px; /* Space between sections */
+  padding: 15px; /* Padding inside sections */
+  border-radius: 8px; /* Rounded corners */
+  background: white; /* White background for sections */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for sections */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 10px; /* Space between images */
+}
+
+.gallery img {
+  width: 100%; /* Make images fill their container */
+  border-radius: 8px; /* Rounded corners for images */
+}
+
+.map-container {
+  text-align: center; /* Center the map section */
+}
+
+footer {
+  text-align: center; /* Center footer text */
+  padding: 10px 0;
+  background: #4CAF50; /* Match footer color with header */
+  color: white; /* White text for footer */
+  position: relative; /* Ensure footer stays at the bottom */
+  bottom: 0;
+  width: 100%; /* Full width footer */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Stack navigation items on small screens */
+  }
+
+  nav ul li a {
+    margin: 5px 0; /* Margin for stacked links */
+  }
+}
+
